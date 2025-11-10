@@ -1,0 +1,65 @@
+/* RESET y Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Sans-Serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Fondo muy claro */
+    color: #343a40; /* Texto oscuro */
+}
+
+/* CABECERA Y ENLACE DE RA */
+header {
+    background: #608bbd; /* Color principal */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.button {
+    display: inline-block;
+    background-color: #365475; /* Verde para destacar la acción */
+    color: white;
+    padding: 12px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #1c3550;
+}
+
+/* SECCIONES DE CONTENIDO */
+main {
+
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    font-family: 'Tahoma';
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #608bbd; /* Línea de color de énfasis */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+section h2 {
+    color: #608bbd;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    margin-top: 50px;
+}

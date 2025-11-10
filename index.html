@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Proyecto de Análisis de Sistemas: Explorador de Hardware con Realidad Aumentada Web</h1>
+    <p>Documentación de la solución de visualización inmersiva.</p>
+    <nav>
+        <a href="https://kkdgatto.github.io/MindAR-Esfera/" class="button">Iniciar Experiencia de RA</a> 
+    </nav>
+</header>
+
+<main>
+    <section id="analisis">
+        <h2>1. Análisis del Problema y Justificación del Sistema</h2>
+        <ol>
+            El problema identificado es la limitación de la visualización 2D en la enseñanza del hardware (CPU, GPU, RAM), que no permite entender correctamente su escala y ubicación espacial.
+        </ol>
+        <ol>
+            La solución es un sistema WebAR (Realidad Aumentada Web). Elegimos esta tecnología por su accesibilidad (no requiere instalar apps) y su capacidad para ofrecer una visualización inmersiva 3D directamente sobre un marcador físico. Este enfoque transforma un concepto abstracto en una experiencia de aprendizaje tangible y eficiente.
+        </ol>
+        </section>
+
+    <section id="solucion">
+        <h2>2. Diseño y Componentes de la Solución</h2>
+        <ol>El diseño se basa en el seguimiento de marcadores (marker tracking) para la activación de modelos 3D. Cada marcador físico está asociado a un componente de PC:</ol>
+            
+            <br>Marcador 1 (ej. Hiro): Activa el modelo CPU.</br>
+
+            <br>Marcador 2 (ej. Kaije): Activa el modelo GPU.</br>
+
+            <br>Marcador 3 (ej. 'A'): Activa el modelo RAM.</br>
+
+            <br>El sistema garantiza que solo el modelo 3D correspondiente al marcador detectado sea renderizado, manteniendo la experiencia clara y rápida.</br>
+
+        </section>
+
+    <section id="arquitectura">
+        <h2>3. Arquitectura Técnica y Stack de Desarrollo</h2>
+        <ol>El proyecto utiliza un stack de código abierto para su desarrollo y despliegue:</ol>
+
+        <br>Librería Principal: MindAR: Es la librería de JavaScript ligera y de alto rendimiento que se encarga del reconocimiento del marcador y el cálculo de la posición de la cámara (WebXR).</br>
+
+        <br>Contenido 3D: Modelos optimizados en formato GLTF/GLB.</br>
+
+        <br>Plataforma de Despliegue: GitHub Pages: Se usa para el hosting estático, lo cual es crucial porque garantiza el protocolo HTTPS. El HTTPS es un requisito de seguridad fundamental para que los navegadores permitan el acceso a la cámara y, por lo tanto, para que la RA funcione.</br>
+
+        <br>Herramientas de Edición: El código se gestionó y editó usando Visual Studio Code.</br>
+
+        </section>
+    
+    <section id="instrucciones">
+        <h2>4. Guía de Uso y Acceso</h2>
+        <ol>
+            <li>Abre esta página en tu dispositivo móvil.</li>
+            <li>Presiona el botón "Iniciar Experiencia de RA".</li>
+            <li>Escanea los marcadores impresos.</li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Desarrollado por Jose Carlos Paredes y Antonella Centurión.</p>
+</footer>
+</body>
+</html>
