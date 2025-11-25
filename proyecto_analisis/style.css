@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Verdana', sans-serif; 
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #343a40; 
+}
+
+
+header {
+    background: #3e6fa7; 
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.button {
+    display: inline-block;
+    background-color: #76caae; 
+    color: white;
+    padding: 12px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #76caae;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #3e6fa7; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+section h2 {
+    font-family: 'Georgia', serif; 
+    color: #658cb9;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+}
+section ol, section ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+
+
+.component-list-with-markers {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    margin-top: 25px;
+}
+
+.component-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fcfcfc; 
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.component-item img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.component-item div {
+
+    flex-grow: 1; 
+}
+
+.component-item h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #3e6fa7; 
+    margin-bottom: 8px; 
+    font-size: 1.25em;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.component-item p {
+    font-size: 0.95em; 
+    color: #555;
+    margin-top: 0;
+}
+
+
+@media (max-width: 767px) {
+    .component-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .component-item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .component-item div {
+        text-align: left;
+    }
+    .component-item h3 {
+        text-align: center;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    margin-top: 50px;
+}
